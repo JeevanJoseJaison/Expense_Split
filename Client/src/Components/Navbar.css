@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: rgb(0, 33, 65);
+}
+.nav__brand {
+  justify-content:left;
+  text-transform: uppercase;
+  color: rgb(204, 204, 204);
+}
+.button {
+  margin-top: 15px;
+  width: auto;
+  margin: 10px;  
+}
+

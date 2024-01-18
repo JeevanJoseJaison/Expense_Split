@@ -1,0 +1,163 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+:root{
+    --space-cadet: #273469;
+    --space-cadet-dark: #1e2749;
+    --lavender-blue: #e4d9ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    line-height: 1.6;
+    background: var(--space-cadet-dark);
+    font-size: 1.05rem;
+    overflow: hidden;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+   
+  
+}
+.container{
+    min-height: 100vh;
+}
+.bill-divider-wrapper{
+    max-width: 1080px;
+    background: #fff;
+    overflow: hidden;
+    margin-right: 200px;
+    
+}
+.users{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.userName{
+  flex: 0 0 60px; /* Set a fixed width for h4, adjust as needed */
+  margin-right: 10px; 
+}
+.split{
+  width: 70px;
+}
+.userlist{
+  height: 120px;
+}
+form{  
+  overflow: auto;
+}
+
+.owes{
+  font-size: large;
+  color: brown;
+}
+
+.title{
+    background: var(--space-cadet);
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.title h1{
+    text-align: center;
+    color: #fff;
+}
+.bill-inputs, .bill-output{
+    padding: 2rem 2.5rem;
+}
+.bill-inputs{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-group{
+    padding: 0.5rem 0;
+}
+.form-group label{
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+.form-control{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid var(--lavender-blue);
+    transition: all 0.4s ease;
+    
+}
+.form-control:focus{
+    outline: 0;
+    border-color: var(--space-cadet);
+}
+#calc-btn{
+    padding: 0.9rem 2.2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 1.25rem;
+    background:var(--space-cadet-dark);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s ease;
+   
+}
+
+.invalid {
+  color: red;
+  animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+#calc-btn:focus{
+    outline: 0;
+}
+#calc-btn:hover{
+    background: var(--space-cadet);
+}
+.text-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.text-group h3{
+    font-weight: 400;
+    opacity: 0.8;
+}
+.text-group:nth-child(1) h3{
+    font-weight: 700;
+}
+.text-group span{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
