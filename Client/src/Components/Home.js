@@ -35,15 +35,20 @@ const Home = React.memo(({ switchs, setSwitch, setCalc, calc }) => {
     }));
   };
   const fetchData = async () => {
+
+   
     try {
 
       // Make a POST request without waiting for the response
-      await axios.post('http://localhost:5000/exp/updateExpense', {expenseType:expenseType, paidBy: paidBy, amount: amount, splitType: (splitT === "Equally") ? splitT : { [splitT]: values } });
+      await axios.post('http://localhost:5000/exp/updateExpense', {expenseType:expenseType, paidBy: paidBy, amount: amount, splitType: (splitT === "Equally") ? splitT : { [splitT]: updatedObj } });
     } catch (error) {
       console.error('Error making request:', error);
     }
   };
-
+  const updatedObj = Object.fromEntries(
+    userName.map(item => [item, values[item] || '0'])
+  );
+  console.log(values,updatedObj);
 
   const handleCalculate = () => {
     if (isSumValid()) {
