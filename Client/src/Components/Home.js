@@ -8,7 +8,7 @@ const Home = React.memo(({ switchs, setSwitch, setCalc, calc }) => {
   const owes = useSelector((state) => state.owes);
   const individual = useSelector((state) => state.individual)
   const history = useSelector((state) =>state.history)
-  const expensetype = ["Food", "Groceries", "Beverages", "Medical" ,"Movies","Rent","Entertainment","Shoping"]
+  const expensetype = ["Food", "Groceries", "Beverages", "Medical" ,"Movies","Rent","Shoping","Electricity","Other"]
   const [expenseType, setExpenseType] = useState('');
   const splitType = ["Equally", "Percentage", "Exact"]
   const [splitT, setSplitT] = useState('Split Type')
