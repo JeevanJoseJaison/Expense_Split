@@ -86,7 +86,7 @@ const [added , setAdded] = useState(false);
                         Add User
                     </button>
                     <button type="button" onClick={closeModal}>
-                        Cancel
+                        Close
                     </button>
                     {added&&(<h4>User Added</h4>)}
                 </form>
